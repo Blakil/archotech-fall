@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <KCSG.SymbolDef>
+    <defName>Ship_Beam_Unpowered_Plasteel</defName>
+    <thing>Ship_Beam_Unpowered</thing>
+    <stuff>Plasteel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>ShipHeatConduit_Plasteel</defName>
+    <thing>ShipHeatConduit</thing>
+    <stuff>Plasteel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>HeavyPowerConduit</defName>
+    <thing>HeavyPowerConduit</thing>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>ShipHullTile_Plasteel</defName>
+    <thing>ShipHullTile</thing>
+    <stuff>Plasteel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>ShipAirlock_Plasteel</defName>
+    <thing>ShipAirlock</thing>
+    <stuff>Plasteel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>Ship_Reactor_Small_Plasteel</defName>
+    <thing>Ship_Reactor_Small</thing>
+    <stuff>Plasteel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>ChJDroidPrinter_Plasteel_East</defName>
+    <thing>ChJDroidPrinter</thing>
+    <stuff>Plasteel</stuff>
+    <rotation>East</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>ShipInside_PassiveVent_AlphaPoly_West</defName>
+    <thing>ShipInside_PassiveVent</thing>
+    <stuff>BetaPoly</stuff>
+    <rotation>West</rotation>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>Ship_CryptosleepCasket_Plasteel_North</defName>
+    <thing>Ship_CryptosleepCasket</thing>
+    <stuff>Plasteel</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>ShipCapacitorSmall_FerrosiliconAlloy_North</defName>
+    <thing>ShipCapacitorSmall</thing>
+    <stuff>FerrosiliconAlloy</stuff>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>PawnSymbol</defName>
+    <pawnKindDef>Drifter</pawnKindDef>
+    <!-- Default:false -->
+    <isSlave>false</isSlave>
+    <!-- To spawn part of map faction Default:true -->
+    <spawnPartOfFaction>true</spawnPartOfFaction>
+    <!-- Null for wild pawn, or map faction if spawnPartOfFaction is true -->
+    <faction>OutlanderRough</faction>
+    <numberToSpawn>1</numberToSpawn>
+    <!-- Default:false -->
+    <spawnDead>false</spawnDead>
+    <!-- Default:false -->
+    <spawnRotten>false</spawnRotten>
+    <!-- Default:false -->
+    <spawnFilthAround>false</spawnFilthAround>
+    <!-- Default:false -->
+    <defendSpawnPoint>true</defendSpawnPoint>
+    </KCSG.SymbolDef>
+
+    <KCSG.SymbolDef>
+    <defName>ShipArchotechSpore_BetaPoly</defName>
+    <thing>ShipArchotechSpore</thing>
+    <stuff>BetaPoly</stuff>
+    <containPawnKindAnyOf>
+    <li>PawnSymbol</li>
+    </containPawnKindAnyOf>
+    <!-- If the map faction is Player, those pawnkinds are used -->
+    <containPawnKindForPlayerAnyOf>
+        <li>PawnSymbol</li>
+    </containPawnKindForPlayerAnyOf>
+    <!-- 1 if pawn should always spawn inside -->
+    <Consciousness>
+    <def>Human</def>
+    </Consciousness>
+    <chanceToContainPawn>1</chanceToContainPawn>
+    <!-- Pawn is spawned part of it's parent faction -->
+    <spawnPartOfFaction>true</spawnPartOfFaction>
+    </KCSG.SymbolDef>
+
+
+
+
+
+    <KCSG.StructureLayoutDef>
+    <defName>ArchotechStart1</defName>
+    <spawnConduits>false</spawnConduits>
+    <layouts>
+        <li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,SolidMarble_North,.,.,.,.,.,.,SolidMarble_North,SolidMarble_North,.,.,.,.</li>
+        <li>.,.,SolidMarble_North,SolidMarble_North,.,SolidMarble_North,SolidMarble_North,.,SolidMarble_North,SolidMarble_North,SolidMarble_North,.,.,.,.</li>
+        <li>.,SolidMarble_North,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,ShipHullTile_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,.,.,.,.</li>
+        <li>SolidMarble_North,SolidMarble_North,Ship_Beam_Unpowered_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,Ship_Beam_Unpowered_Plasteel,SolidMarble_North,.,.,.</li>
+        <li>.,SolidMarble_North,Ship_Beam_Unpowered_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,SolidMarble_North,.</li>
+        <li>.,.,Ship_Beam_Unpowered_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,Ship_Beam_Unpowered_Plasteel,SolidMarble_North,.</li>
+        <li>SolidMarble_North,.,ShipInside_PassiveVent_AlphaPoly_West,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,Ship_Beam_Unpowered_Plasteel,SolidMarble_North,.</li>
+        <li>.,SolidMarble_North,Ship_Beam_Unpowered_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,Ship_Beam_Unpowered_Plasteel,SolidMarble_North,SolidMarble_North</li>
+        <li>.,SolidMarble_North,Ship_Beam_Unpowered_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,Ship_Beam_Unpowered_Plasteel,.,.</li>
+        <li>SolidMarble_North,SolidMarble_North,Ship_Beam_Unpowered_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,ShipHullTile_Plasteel,Ship_Beam_Unpowered_Plasteel,SolidMarble_North,.,.,.</li>
+        <li>SolidMarble_North,SolidMarble_North,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,SolidMarble_North,.,.,.</li>
+        <li>.,SolidMarble_North,SolidMarble_North,SolidMarble_North,SolidMarble_North,.,SolidMarble_North,SolidMarble_North,SolidMarble_North,SolidMarble_North,.,.,.,.,.</li>
+        <li>.,.,.,.,SolidMarble_North,SolidMarble_North,SolidMarble_North,.,.,.,.,.,.,.,.</li>
+        </li>
+        <li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,ShipHeatConduit_Plasteel,ShipAirlock_Plasteel,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,Ship_Reactor_Small_Plasteel,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,HeavyPowerConduit,.,.,.,.,.,.,ChJDroidPrinter_Plasteel_East,.,.,.,.</li>
+        <li>.,.,.,HeavyPowerConduit,.,.,AIPersonaCore,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,ShipCapacitorSmall_FerrosiliconAlloy_North,.,.,ShipArchotechSpore_BetaPoly,.,.,ShipCapacitorSmall_FerrosiliconAlloy_North,Ship_Beam_Unpowered_Plasteel,Ship_Beam_Unpowered_Plasteel,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        </li>
+        <li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,HeavyPowerConduit,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,ShipHeatConduit_Plasteel,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,ShipHeatConduit_Plasteel,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,ShipHeatConduit_Plasteel,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        </li>
+        <li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,Ship_CryptosleepCasket_Plasteel_North,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        </li>
+    </layouts>
+    <roofGrid>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,1,1,1,1,1,1,1,1,1,.,.,.,.</li>
+        <li>.,.,1,1,1,1,1,1,1,1,1,.,.,.,.</li>
+        <li>.,.,1,1,1,1,1,1,1,1,1,1,1,.,.</li>
+        <li>.,.,1,1,1,1,1,1,1,1,1,1,1,.,.</li>
+        <li>.,.,1,1,1,1,1,1,1,1,1,1,1,.,.</li>
+        <li>.,.,1,1,1,1,1,1,1,1,1,1,1,.,.</li>
+        <li>.,.,1,1,1,1,1,1,1,1,1,1,1,.,.</li>
+        <li>.,.,1,1,1,1,1,1,1,1,1,.,.,.,.</li>
+        <li>.,.,1,1,1,1,1,1,1,1,1,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    </roofGrid>
+    <terrainGrid>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,.,.,.,.</li>
+        <li>.,.,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,.,.,.,.</li>
+        <li>.,.,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,.,.</li>
+        <li>.,.,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,.,.</li>
+        <li>.,.,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,.,.</li>
+        <li>.,.,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,.,.</li>
+        <li>.,.,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,.,.</li>
+        <li>.,.,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,.,.,.,.</li>
+        <li>.,.,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,FakeFloorInsideShip,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+        <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    </terrainGrid>
+    <modRequirements>
+        <li>skyarkhangel.hsk</li>
+        <li>kentington.saveourship2</li>
+        <li>chjees.androids</li>
+    </modRequirements>
+    </KCSG.StructureLayoutDef>
+
+</Defs>

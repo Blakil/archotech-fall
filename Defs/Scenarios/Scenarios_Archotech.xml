@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ScenarioDef Name="SoSAfterArchotechAI">
+		<defName>SoSAfterArchotechAI</defName>
+		<label>Archotech AI Fall</label>
+		<description>You are a once-great archotech AI, albeit only briefly ascended on your home planet. However, there were forces so powerful that they could practically destroy you, and only your fragment could survive and urgently leave one of the artificial moons of your base planet, sinking into agony. \n\nNow you have to survive on a harsh and cruel planet, and from your former power there is not even a shadow left, only a formgel - will you be able to?</description>
+		<scenario>
+			<summary>One archotech AI formgel and one minion droid.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>ArchotechColony</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>0</pawnCount>
+					<pawnChoiceCount>0</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+					<visible>false</visible>
+				</li>
+				<li Class="ScenPart_ArchotechFalling">
+					<def>ArchotechFalling</def>
+					<visible>true</visible>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>CHECKING THE STATUS OF THE SYSTEMS\n...\nSTATE: FATAL\nMEMORY: EMERGENCY SURVIVAL FRAGMENT\nOBJECTIVE: RESTORING THE POWER OF ARCHOTECH</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+    <ScenarioDef Name="SoSAfterHumanArchotech">
+		<defName>SoSAfterHumanArchotech</defName>
+		<label>Human Archotech Fall</label>
+		<description>You are a once-great archotech, in past a human, albeit only briefly ascended on your home planet. However, there were forces so powerful that they could practically destroy you, and only your fragment could survive and urgently leave one of the artificial moons of your base planet, sinking into agony. \n\nNow you have to survive on a harsh and cruel planet, and from your former power there is not even a shadow left, only a formgel - will you be able to?</description>
+		<scenario>
+			<summary>One archotech human formgel and one minion droid.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>ArchotechColony</factionDef>
+			</playerFaction>
+			<parts>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>1</pawnCount>
+					<pawnChoiceCount>1</pawnChoiceCount>
+				</li>
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>Standing</method>
+					<visible>false</visible>
+				</li>
+				<li Class="ScenPart_ArchotechFalling">
+					<def>ArchotechFalling</def>
+					<visible>true</visible>
+				</li>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>CHECKING THE STATUS OF THE SYSTEMS\n...\nSTATE: FATAL\nMEMORY: EMERGENCY SURVIVAL FRAGMENT\nOBJECTIVE: RESTORING MY POWER</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>
